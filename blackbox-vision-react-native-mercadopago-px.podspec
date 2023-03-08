@@ -29,7 +29,7 @@ Pod::Spec.new do |s|
   end
 
   # Add support for configuring custom SDK version
-  s.dependency "MercadoPagoSDK", mercadopago_px_sdk_version
+  s.dependency "MercadoPagoSDKV4", mercadopago_px_sdk_version
 
   # Add support to make it a static framework
   if defined?($RNMercadoPagoPxAsStaticFramework)

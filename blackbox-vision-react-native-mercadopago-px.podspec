@@ -12,10 +12,10 @@ Pod::Spec.new do |s|
   s.authors      = package["author"]
   s.social_media_url    = 'https://twitter.com/blackbox_vision'
 
-  s.platforms    = { :ios => "13.0" }
-  s.source       = { :git => "https://github.com/lexcasa/react-native-mercadopago-px", :tag => "#{s.version}" }
+  s.platforms    = { :ios => "10.0" }
+  s.source       = { :git => "https://github.com/BlackBoxVision/react-native-mercadopago-px.git", :tag => "#{s.version}" }
   
-  s.ios.deployment_target = "13.0"
+  s.ios.deployment_target = "10.0"
   s.source_files = "ios/**/*.{h,m,mm,swift}"
 
   s.swift_version = "4.2"
@@ -29,7 +29,7 @@ Pod::Spec.new do |s|
   end
 
   # Add support for configuring custom SDK version
-  s.dependency "MercadoPagoSDKV4", mercadopago_px_sdk_version
+  s.dependency "MercadoPagoSDK", mercadopago_px_sdk_version
 
   # Add support to make it a static framework
   if defined?($RNMercadoPagoPxAsStaticFramework)
